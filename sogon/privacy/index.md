@@ -4,7 +4,7 @@ permalink: /sogon/privacy/
 lang: ko
 ---
 
-[English](/unveil-apps/sogon/privacy/en/)
+[English](/unveil-privacy/sogon/privacy/en/)
 
 # 소곤 개인정보처리방침
 

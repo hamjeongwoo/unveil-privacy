@@ -8,7 +8,7 @@ lang: en
 
 # Sonbaram Privacy Policy
 
-Effective date: 2026-11-04  
+Effective date: 2026-11-05  
 Operator: un-veil ("we")  
 Contact: support@un-veil.co.kr
 
@@ -18,6 +18,7 @@ We provide the Android app "Sonbaram" (the "app"). This policy explains what inf
 
 - The app reads the hand shape shown to the camera **on your phone** and runs the action you chose (open an app, open the dialer, open a message draft, control music or video).
 - Camera images are used only to read the hand shape on your phone. **They are never saved and never leave your phone.**
+- When you set up "Open an app", the app reads the names of the apps installed on your phone, on your phone, so you can pick which one to open. This list is not saved and does not leave your phone.
 - The app has no sign-up or login, and **we operate no server.** We do not collect or keep your information through the app.
 - Information the app stores stays on your phone and is excluded from cloud backup and device-to-device transfer.
 - The app has ads (Google AdMob) and a one-time purchase (Google Play Billing). Google may process some information for these two (sections 4 and 5).
@@ -45,7 +46,7 @@ The information below is stored only in the app's private storage on your phone 
 |---|---|
 | Hand shape data | The three hand shapes you showed when creating a gesture, saved as the coordinates of 21 points relative to the wrist and divided by palm size. They are numbers, not pictures, but may reflect the proportions of your hand, such as finger lengths |
 | Gesture information | Gesture name, on/off state, and the action linked to the gesture |
-| Action settings | Open an app (target app name), call (phone number and display name), message (recipient number and text), music/video control (play/pause, next, previous) |
+| Action settings | Open an app (name and package name of the target app), call (phone number and display name), message (recipient number and text), music/video control (play/pause, next, previous) |
 | Settings and state | The master switch, notification, vibration and edge-glow settings, whether you have seen the guides, whether you bought ad removal and when it was last checked, when an ad was last shown, and time records used to count the free-use period (3 days) |
 
 - The data lives in the app's private internal storage, which other apps cannot read. It is excluded from cloud backup and device transfer (`allowBackup=false` and data extraction rules), so it is not restored when you reinstall the app or move to a new phone.
@@ -54,11 +55,22 @@ The information below is stored only in the app's private storage on your phone 
 
 ### 2.3 What happens when an action runs
 
-- When a hand shape is recognized, the app asks the matching app on your phone (Phone, Messages, KakaoTalk, YouTube, etc.) to open a screen. The phone number and message text go only to the phone or messaging app on your device. The app does not place calls or send messages itself; it only opens the screen.
+- When a hand shape is recognized, the app asks the matching app on your phone (Phone, Messages, an app you chose, etc.) to open a screen. The phone number and message text go only to the phone or messaging app on your device. The app does not place calls or send messages itself; it only opens the screen.
 - Music/video control sends your phone's media key signals (play/pause, next, previous). The app does not read what is playing.
-- The app checks on your phone whether a target app is installed and does not send the result anywhere.
+- The app checks, only on your phone, whether a target app is installed and which apps are installed (2.4), and does not send the result anywhere.
 
-### 2.4 What the app does not use
+### 2.4 Installed app list
+
+| Item | Details |
+|---|---|
+| Purpose | To show a list so you can choose which app "Open an app" should open |
+| When | Only while you have chosen "Open an app" as a gesture's action and the app list screen is open. It is not read in the background or when the app starts |
+| What is read | The name and package name of apps that have an icon on the home screen (launcher). App icons, usage history and what is inside the apps are not read |
+| Stored? | The whole list is not saved. Only the name and package name of the one app you pick are saved on your phone as part of the gesture settings |
+| Sent out? | Nothing leaves your phone |
+| Permission | No extra permission or prompt (the app does not use the broad "query all packages" permission) |
+
+### 2.5 What the app does not use
 
 The app does not use accessibility services, location, the microphone, storage (photos or files), your full contact list, call logs or the SMS inbox. It does not receive your name, email or account information. The app contains no analytics or crash-reporting tools.
 
@@ -142,4 +154,4 @@ For reports and consultations about privacy infringement, you can contact the fo
 
 When we change this policy, we will announce it on this page from 7 days before it takes effect (30 days for material changes). The change history is kept at the bottom of this page.
 
-Change history: 2026-11-04 First effective version
+Change history: 2026-11-04 First effective version / 2026-11-05 Added a note that "Open an app" reads the installed app list on your phone (applies from app version 1.0.1; this feature is new in 1.0.1, so how earlier versions handle information does not change)

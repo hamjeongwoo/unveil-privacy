@@ -12,6 +12,13 @@ Effective date: 2026-11-01
 Operator: un-veil ("we")  
 Contact: support@un-veil.co.kr
 
+> **Notice of upcoming change (posted 2026-11-12)**  
+> We plan to change this policy when we release a version of the app (0.5.0 or later) that adds a "text in photos" search feature. The change takes effect **on the day that version is released, which will be 2026-11-19 or later**, and the revised policy will be posted on this page before it takes effect.
+>
+> - The feature is planned to be **off by default**; only if you turn it on in Settings will the app read the text in your photos **on your device** and store it in the app's private storage.
+> - The text it reads is not sent to our servers, and turning the feature off is planned to delete all of it.
+> - How the items already covered by this policy are handled does not change.
+
 We provide the Android app "Sogon" (the "app"). This policy explains what information the app handles, where, and what rights you have.
 
 ## 1. At a glance

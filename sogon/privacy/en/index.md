@@ -12,12 +12,14 @@ Effective date: 2026-11-01
 Operator: un-veil ("we")  
 Contact: support@un-veil.co.kr
 
-> **Notice of upcoming change (posted 2026-11-12)**  
-> We plan to change this policy when we release a version of the app (0.5.0 or later) that adds a "text in photos" search feature. The change takes effect **on the day that version is released, which will be 2026-11-19 or later**, and the revised policy will be posted on this page before it takes effect.
+> **Notice of upcoming change (revised 2026-11-13 — replaces the notice posted 2026-11-12)**  
+> We plan to change this policy when we release a version of the app (0.5.0 or later) that adds "text in photos" search, ads (Google AdMob) and a one-time in-app purchase to remove ads (Google Play). The change takes effect **on the day that version is released, which will be 2026-12-14 or later**, and the revised policy will be posted on this page before it takes effect. The effective date announced on 2026-11-12 (2026-11-19 or later) is **changed to 2026-12-14 or later** by this notice.
 >
-> - The feature is planned to be **off by default**; only if you turn it on in Settings will the app read the text in your photos **on your device** and store it in the app's private storage.
-> - The text it reads is not sent to our servers, and turning the feature off is planned to delete all of it.
-> - How the items already covered by this policy are handled does not change.
+> - **Text in photos search**: off by default; only if you turn it on in Settings will the app read the text in your photos **on your device** and store it in the app's private storage. The text is not sent to our servers, and turning the feature off is planned to delete all of it.
+> - **Ads**: to show ads, the ad SDK (Google AdMob) is planned to process information such as the advertising ID and IP address and send it to Google. Ads are planned to be requested only in a non-personalized way (not based on your interests). Photos, videos, search queries, text read from photos, analysis results and capture locations are not used for ads.
+> - **Remove-ads purchase**: Google Play handles purchase verification; the ad SDK is planned not to start for users who have purchased it.
+> - **Internet use**: the app will have the internet permission in order to show ads and verify purchases (the current version has none). We still do not send your photos, search queries or text read from photos to a server.
+> - How the other items already covered by this policy are handled does not change.
 
 We provide the Android app "Sogon" (the "app"). This policy explains what information the app handles, where, and what rights you have.
 
@@ -84,4 +86,4 @@ The app does not use cookies.
 
 We will announce changes on this page at least 7 days before they take effect (30 days for significant changes). The history is kept at the bottom of this page.
 
-Change history: 2026-11-01 First version
+Change history: 2026-11-01 First version · 2026-11-13 Notice of upcoming change revised (effective date postponed; ads and purchase added)

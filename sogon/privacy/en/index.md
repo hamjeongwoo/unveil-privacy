@@ -8,15 +8,17 @@ lang: en
 
 # Sogon Privacy Policy
 
-Effective date: 2026-11-14  
+Effective date: 2026-11-17  
 Operator: un-veil ("we")  
 Contact: support@un-veil.co.kr
 
-> **Notice of this update (effective 2026-11-14)**  
-> This policy takes effect on 2026-11-14. What changed from the policy effective 2026-11-13 is listed below.
+> **Notice of this update (effective 2026-11-17)**  
+> This policy takes effect on 2026-11-17, together with the version of the app (0.6.0 or later) that adds the photo map and the choice to keep text already read from photos when you turn off text search. What changed from the policy effective 2026-11-14 is listed below. Earlier versions of the app do not have these features, so the related parts do not apply to them.
 >
-> - **Billing library diagnostics** (applies to all versions from 0.5.0): we now state in sections 3-2 and 5 that the Google Play Billing Library, which checks whether you purchased, may send technical diagnostic information to Google. This is not new behavior; it has been there since 0.5.0, and this update only completes the description.
-> - This update only completes the description in this policy; it does not change what information the app handles or how. What the policy effective 2026-11-13 added (ads with Google AdMob, a one-time in-app purchase to remove ads with Google Play, and "text in photos" search, in version 0.5.0 or later) still applies, and the full list of changes is in the change history at the bottom.
+> - **Text in photos search**: when you turn it off in Settings, you can choose whether to **delete or keep** the text the app has already read (delete is the default). If you keep it, the text stays in the app's private storage on your device, is not used for search while the switch is off, and can be deleted in Settings at any time. In the earlier version (0.5.0), turning it off always deletes all of it.
+> - **Photo map**: the search screen can show the number of photos by region on a map of Korea. It uses only the neighborhood-level IDs the app has already stored and the place-name dictionary bundled in the app, and the app draws the map itself on your device.
+> - The two changes above (the photo map and the choice to keep text) do not add any information that is processed or sent off your device, or any new permission. How ads, the remove-ads purchase and internet use work is not changed by these two changes.
+> - The full list of changes is in the change history at the bottom.
 
 We provide the Android app "Sogon" (the "app"). This policy explains what information the app handles, where, and what rights you have.
 
@@ -24,7 +26,7 @@ We provide the Android app "Sogon" (the "app"). This policy explains what inform
 
 - The app has no sign-up or login and **we do not operate any server for it.**
 - Your photos, videos, search queries, the analysis results of your photos, the capture locations recorded in your photos and, if you turn it on, **the text in your photos** are **processed and stored on your device and are not sent to any server of ours.**
-- "Search by text in photos" is **off by default** and works only after you turn it on in Settings. Turning it off deletes all the text the app has read.
+- "Search by text in photos" is **off by default** and works only after you turn it on in Settings. When you turn it off, you can choose whether to delete or keep the text the app has read (delete is the default; section 4).
 - To show ads, **the Google ad SDK included in the app processes information such as the advertising ID and IP address and sends it to Google** (section 3-1). This information does not pass through any server of ours, and we do not receive it per user. Ads are requested only in a non-personalized way (not based on your interests).
 - Removing ads is a one-time purchase through Google Play. The app does not receive your payment method or card details; it only checks with Google Play whether you have purchased. When it does, the Google Play Billing Library included in the app may send technical diagnostic information to Google (section 3-2).
 
@@ -34,8 +36,8 @@ We provide the Android app "Sogon" (the "app"). This policy explains what inform
 |---|---|---|---|
 | Photos and videos (files and details your device provides, such as capture time, file name, album name) | Show the library, search, analysis | On your device. The app only reads them, and deletes only when you choose to, through the system | No |
 | Analysis results (numeric search values, "sea/food"-type content suggestions, analysis progress) | Search by sentence or content, similar photos | App-private storage on your device | No |
-| Text in your photos (only if you turn on "Search by text in photos" in Settings; search text) | Find photos that contain a lot of text, such as receipts, menus, screenshots and signs, by that text | The app reads your photos on the device and stores the resulting text in the app-private database on your device. It mainly reads photos that look like they contain a lot of text. Text in photos may include personal information such as names, phone numbers and addresses, and may be stored as it is. However, **digits that look like a Korean resident registration number or a payment card number are deleted before saving** (this also applies when such a number is read split across several lines, if the format matches; other numbers, such as bank account numbers, are not filtered out). The app does not sort or analyze the text by type and does not use it for anything other than search | No |
-| Capture location stored in your photos (only if you allow the "photo location" permission) | Search by place name such as "Incheon" | Converted on the device into a neighborhood-level ID using an offline place-name dictionary bundled in the app; **the coordinates are discarded** (not stored, logged or sent). The app does not read your device's current location | No |
+| Text in your photos (only if you turn on "Search by text in photos" in Settings; search text) | Find photos that contain a lot of text, such as receipts, menus, screenshots and signs, by that text | The app reads your photos on the device and stores the resulting text in the app-private database on your device. It mainly reads photos that look like they contain a lot of text. Text in photos may include personal information such as names, phone numbers and addresses, and may be stored as it is. However, **digits that look like a Korean resident registration number or a payment card number are deleted before saving** (this also applies when such a number is read split across several lines, if the format matches; other numbers, such as bank account numbers, are not filtered out). The app does not sort or analyze the text by type and does not use it for anything other than search. If you choose delete when turning it off, all of it is deleted; if you choose keep, it stays on your device but is not used for search while the switch is off (section 4) | No |
+| Capture location stored in your photos (only if you allow the "photo location" permission) | Search by place name such as "Incheon"; show the number of photos by region on the photo map | Converted on the device into a neighborhood-level ID using an offline place-name dictionary bundled in the app; **the coordinates are discarded** (not stored, logged or sent). The app does not read your device's current location. The number of photos stored for each neighborhood-level ID is shown on the "photo map" (the "지도로 보기" ("view on map") button on the search screen). The app draws the map itself on your device from a Korea outline bundled in the app and the representative points of regions in the place-name dictionary (values near the middle of each region, not the coordinates of your photos). It does not download map data, and it does not read or store any additional location information for the map | No |
 | Search queries and recent searches | Search, show recent searches | On your device; you can clear them in Settings | No |
 | Favorites and display settings | App features | On your device | No |
 | Notifications | Show analysis progress (if you allow notifications) | On your device | No |
@@ -55,6 +57,8 @@ The app uses the internet permission and the network-state permission. It uses t
 - **Purchase and verification**: Google Play billing is used to buy "remove ads" and to check whether you purchased. Google Play handles the payment, and we do not receive your payment method or card details. The billing library used for this may send diagnostic information to Google (section 3-2).
 - **Model download**: in versions that provide features needing the search model and the text-reading model (about 650 MB in total), the models are **downloaded separately by Google Play** after install and delivered to the app (over Wi-Fi by default). This is a Google Play service; we do not receive your information, and your photos and text are not used in this process. After the models are downloaded, you can search without an internet connection.
 - **Ad consent message**: in regions where a consent message is required by law, the Google consent management SDK may communicate with Google to check your consent status.
+
+The photo map does not download maps or place names from the internet; the app draws it from data bundled in the app.
 
 We do not operate any server, and the app code written by us has no function that sends your photos, videos, search queries, analysis results, text read from photos or capture locations. The four uses above are all communications made by Google SDKs or services.
 
@@ -85,7 +89,7 @@ We do not operate any server, and the app code written by us has no function tha
 ## 4. Retention and deletion
 
 - Information the app stores on your device (analysis results, search history, favorites, settings, the numbers used for ad and purchase prompts, whether you purchased, your ad consent choice, etc.) is deleted when you uninstall the app or clear its data. "Clear history" in Settings removes only your search history.
-- **Text read from your photos** is deleted all at once when you turn off "Search by text in photos" in Settings (turning it on again starts reading from scratch). The text of a photo is also deleted when that photo is deleted, removed from the app's list, or edited. It is deleted too when you uninstall the app or clear its data.
+- **Text read from your photos**: when you turn off "Search by text in photos" in Settings, you choose in a dialog. **Delete** (the default) deletes all of it at once (turning it on again starts reading from scratch). **Keep** only turns the switch off and leaves the text already read in the app's private storage on your device. Kept text is not used for search while the switch is off, and reading continues from where it stopped if you turn the switch on again. While the switch is off and text remains, Settings shows a "읽어 둔 글자가 남아 있어요" ("Text that was read is still stored") row where you can delete it at any time. Either way, the text of a photo is deleted when that photo is deleted, removed from the app's list, or edited, and all of it is deleted when you uninstall the app or clear its data. In the earlier version (0.5.0), turning it off always deletes all of it.
 - Information stored on your device is deleted by you using the methods above; there is no information that we must retain by law.
 - How long Google keeps the information the ad SDK and the billing library process at Google follows Google's policies. Purchase records are kept by Google Play.
 - We do not keep personal information on any server, so we have no separate retention or deletion procedure.
@@ -122,7 +126,7 @@ We do not operate any server, and the app code written by us has no function tha
 
 ## 6. Your rights
 
-- Information stored only on your device can be removed by you in the app (clear history; turn off "Search by text in photos" to delete the text the app has read), by clearing app data, or by uninstalling.
+- Information stored only on your device can be removed by you in the app (clear history; choose delete when turning off "Search by text in photos", or, after turning it off, delete the kept text from the "Text that was read is still stored" row in Settings), by clearing app data, or by uninstalling.
 - You can change or withdraw photo and location permissions at any time in your device settings. Withdrawing location permission does not remove place identifiers already stored; clearing app data does.
 - Information that Google processes through the ad SDK can be managed in your device's ad settings (reset or delete the advertising ID) and in the ad settings of your Google Account. Billing library diagnostics cannot be turned off or deleted in the app; you can direct questions and requests about information Google processes to Google as described in the Google Privacy Policy (https://policies.google.com/privacy).
 - Requests to access, correct, delete or restrict processing are received at the contact in section 10 (support@un-veil.co.kr), handled by us directly, and answered within the period required by law. Because we keep no personal information on any server, we will tell you if we hold no information about you.
@@ -137,7 +141,7 @@ The app is not directed to children under 14 and we do not knowingly collect per
 - Information is processed and stored on your device by design, and we operate no server.
 - Requested permissions are limited to what is needed: reading photos/videos, reading photo locations, notifications, the analysis task, network access for ads, purchase verification and model download, the advertising ID (for advertising), and Google Play billing.
 - App data is excluded from cloud backup.
-- Digits that look like a resident registration number or a payment card number are deleted before saving, and text read from photos is kept only in the app-private storage on your device. That storage is not separately encrypted and relies on your device's lock screen, encryption and app isolation.
+- Digits that look like a resident registration number or a payment card number are deleted before saving, and text read from photos is kept only in the app-private storage on your device. That storage is not separately encrypted and relies on your device's lock screen, encryption and app isolation. This also applies to text you chose to keep.
 - The ads and billing features are separated into their own module so that the code handling photos, search queries and text read from photos does not use that module and the module does not reference that code (checked automatically at build time). However, the ad SDK and the billing library run in the same process as the app, so the information they collect follows sections 3-1 and 3-2 and Google's explanations.
 
 ## 9. Cookies and similar technologies
@@ -168,3 +172,4 @@ Change history:
 - 2026-11-01 First version
 - 2026-11-13 Added ads (Google AdMob), a one-time purchase to remove ads (Google Play) and text-in-photos search (from version 0.5.0). Added to the information table: ad-related information, purchase status, text read from photos, numbers used for ad prompts and the ad consent choice. Added internet use (section 3) and the ad SDK (section 3-1); rewrote the third-party sharing and processor section as international transfers (section 5); expanded retention and deletion (section 4), rights (section 6), security (section 8), automatic collection technologies including the advertising ID (section 9) and the privacy officer (section 10); added the remedies section (section 11, previously only in the Korean version); corrected the model size to about 650 MB
 - 2026-11-14 Now describe the diagnostic information that the Google Play Billing Library, present since 0.5.0, may send to Google (the app's behavior did not change). Updated sections 1, 2 (new row), 3, 3-2 (new), 4, 5 (billing table added), 6 and 8, and the notice
+- 2026-11-17 Added the photo map and the choice to delete or keep text read from photos when turning off text search (from version 0.6.0). Clarified sections 1, 2 (text-in-photos and capture-location rows), 3, 6 and 8, rewrote the text-in-photos retention and deletion description in section 4, and updated the notice. These two features do not collect or send any new information off your device and add no new permission

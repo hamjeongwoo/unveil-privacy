@@ -9,5 +9,6 @@ title: "un-veil apps"
 - 소곤 (Sogon): [한국어](/unveil-privacy/sogon/privacy/) · [English](/unveil-privacy/sogon/privacy/en/)
 - 손바람 (Sonbaram): [한국어](/unveil-privacy/sonbaram/privacy/) · [English](/unveil-privacy/sonbaram/privacy/en/)
 - Minus March: [한국어](/unveil-privacy/minusmarch/privacy/) · [English](/unveil-privacy/minusmarch/privacy/en/)
+- Hushspark: [한국어](/unveil-privacy/hushspark/privacy/) · [English](/unveil-privacy/hushspark/privacy/en/)
 
 문의 / Contact: support@un-veil.co.kr

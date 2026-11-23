@@ -8,7 +8,7 @@ lang: en
 
 # Sonbaram Privacy Policy
 
-Effective date: 2026-11-05  
+Effective date: 2026-11-30  
 Operator: un-veil ("we")  
 Contact: support@un-veil.co.kr
 
@@ -21,6 +21,7 @@ We provide the Android app "Sonbaram" (the "app"). This policy explains what inf
 - When you set up "Open an app", the app reads the names of the apps installed on your phone, on your phone, so you can pick which one to open. This list is not saved and does not leave your phone.
 - The app has no sign-up or login, and **we operate no server.** We do not collect or keep your information through the app.
 - Information the app stores stays on your phone and is excluded from cloud backup and device-to-device transfer.
+- You can send gestures to friends and receive theirs (from app version 1.1.0). When you send, the app builds a file containing only the names and hand-shape numbers of the gestures you choose and hands it to the app you choose. That file does not go to the operator's servers (see section 2.5).
 - The app has ads (Google AdMob) and a one-time purchase (Google Play Billing). Google may process some information for these two (sections 4 and 5).
 - The app is intended for users aged 18 and over.
 
@@ -40,7 +41,7 @@ We provide the Android app "Sonbaram" (the "app"). This policy explains what inf
 
 ### 2.2 Information stored on your phone (app-private internal storage)
 
-The information below is stored only in the app's private storage on your phone and is not sent to us or to third parties.
+The information below is stored only in the app's private storage on your phone and is not sent to us or to third parties. The exception is when you choose to send a gesture yourself: its name and hand-shape numbers then go to the app you choose (section 2.5).
 
 | Information | Description |
 |---|---|
@@ -70,9 +71,25 @@ The information below is stored only in the app's private storage on your phone 
 | Sent out? | Nothing leaves your phone |
 | Permission | No extra permission or prompt (the app does not use the broad "query all packages" permission) |
 
-### 2.5 What the app does not use
+### 2.5 Gesture sharing (sending and importing, from app version 1.1.0)
 
-The app does not use accessibility services, location, the microphone, storage (photos or files), your full contact list, call logs or the SMS inbox. It does not receive your name, email or account information. The app contains no analytics or crash-reporting tools.
+| Item | Details |
+|---|---|
+| Purpose | To let you send gestures you made to people you choose, and to import gestures you received |
+| When | Only when you tap "Send gestures" or "Import gestures" in Settings, or open a gesture file you received in another app with Sonbaram. If you do not do this, the app sends and reads nothing |
+| What the file contains | For each gesture you pick (1 to 10 per file): its **name** and its **hand-shape numbers** (the three hand shapes you showed when making the gesture, expressed as coordinates of 21 points relative to the wrist and scaled by palm size, plus the length value of each), and the file format version |
+| What the file does not contain | The "action" linked to a gesture (phone number, contact name, message text, or the name of the app to open) and settings such as on/off, camera video or photos, and your name, account, device information, purchase status, time of sending, or location. Because the file has no action, a received gesture cannot place a call or write a message by itself |
+| Nature of hand-shape numbers | They are not photos or video, and they do not include the real size or position of your hand. They can, however, reflect information about the shape of your hand, such as the ratio of finger lengths. The app does not use these numbers to identify or verify who you are; it uses them only to compare against the hand shapes you registered. Only gestures you choose yourself are included |
+| Gesture names | A name is text you wrote. If you wrote personal information in it, it is passed on as written. The app refuses to send a gesture whose name contains the contact name or phone number linked to it, but you must check anything else yourself on screen before sending |
+| How sending works | The app creates one file (named "손바람 제스처 n개", extension `.json`) in the app's private temporary storage (cache) and opens Android's share sheet. The file goes only to the app you pick there (for example a messenger, SMS, or email app). The same share also carries a short note with the app name and the Google Play store address. The app does not know and does not record which app or person you sent it to, and it does not send the file to the operator's servers |
+| After sending | Once the file has gone to the app or person you chose, the app cannot take it back or delete it, and the recipient can forward it to others. How that app handles the file follows that app's own policy. The send screen tells you this |
+| Temporary file | The file in temporary storage is deleted the next time you send, when your phone clears storage, and when you uninstall the app |
+| How receiving works | The app reads only one file: the one you pick in the system file picker under "Import gestures", or the one you open with Sonbaram from another app. The app does not request permission to access all photos or files on your phone |
+| Handling a received file | The file is read only on your phone and checked as data only (it is never run as a program). If its size, format, or value ranges are wrong, nothing is saved and the file is rejected. Until you choose, the file's contents are not saved; only the gestures you choose are saved to the app's private internal storage (2.2). The original file stays in your messenger or files app, and the app does not delete it |
+
+### 2.6 What the app does not use
+
+The app does not use accessibility services, location, the microphone, storage permission that reaches all photos and files, your full contacts, call logs, or the SMS inbox (a gesture sharing file is read only as one file you choose, as in section 2.5). It does not receive your name, email or account information. The app contains no analytics or crash-reporting tools.
 
 ## 3. Permissions the app requests
 
@@ -84,6 +101,8 @@ The app does not use accessibility services, location, the microphone, storage (
 | Vibration | A normal permission granted at install | A short vibration when a hand shape is read; can be turned off in the app settings | — |
 | Foreground service (camera type) | Granted at install, no separate prompt | While you keep the master switch on, a service keeps the camera running so hands can be read over other apps, with a notification. It does not start by itself before you turn it on or after the phone restarts | — |
 | Internet and network state, advertising ID, basic device state, background work, billing (Google Play) | Granted automatically at install; required by the ad and billing components | Ads and purchases (sections 4 and 5). Hand reading and storage do not use these | — |
+
+- Gesture sharing (section 2.5) requests no new permission. Sending uses Android's share sheet and importing uses the system file picker; neither shows a permission prompt.
 
 ## 4. Ads (Google AdMob)
 
@@ -107,12 +126,14 @@ The app does not use accessibility services, location, the microphone, storage (
 ## 6. Third-party provision, outsourcing and transfer abroad
 
 - We do not provide your information to third parties or outsource its processing (we receive none).
+- A file you send with the sharing feature in section 2.5 is not provided by the operator; you send it yourself to the app and people you choose.
 - Google's components in sections 4 and 5 may process information outside the Republic of Korea (for example, in the United States).
 - Information that Google Play collects when you install and use the app from Google Play (install statistics, crash statistics from devices that opted in to sharing, etc.) is governed by Google Play's policies.
 
 ## 7. Retention and deletion
 
 - Information stored on your phone is removed for a gesture when you delete that gesture in the app, and all of the app's stored information is removed when you uninstall the app or clear its data.
+- Copies of gesture files you have already sent cannot be deleted by the operator or the app. They must be deleted on the recipient's phone and in the app you used (such as a messenger). A gesture you received and saved is removed when you delete that gesture in the app.
 - We keep no information about you on any server, so there is nothing for us to retain or delete.
 - Retention and deletion of information the ad components sent to Google follow Google's policies. You can reset or delete the advertising ID in your phone's settings (the menu location varies by manufacturer and Android version).
 
@@ -132,6 +153,7 @@ The app is intended for users aged 18 and over, and we do not knowingly collect 
 - Camera images are processed only in your phone's memory and are never saved or sent.
 - The only external communication of the app is by the ad and billing components.
 - The app's code has no feature that sends your information to our servers.
+- A sharing file receives only the items the app defines (name and hand-shape numbers), and a received file is checked for size, format, and value ranges and rejected if it does not match.
 
 ## 11. Cookies and similar technologies
 
@@ -154,4 +176,4 @@ For reports and consultations about privacy infringement, you can contact the fo
 
 When we change this policy, we will announce it on this page from 7 days before it takes effect (30 days for material changes). The change history is kept at the bottom of this page.
 
-Change history: 2026-11-04 First effective version / 2026-11-05 Added a note that "Open an app" reads the installed app list on your phone (applies from app version 1.0.1; this feature is new in 1.0.1, so how earlier versions handle information does not change)
+Change history: 2026-11-04 First effective version / 2026-11-05 Added a note that "Open an app" reads the installed app list on your phone (applies from app version 1.0.1; this feature is new in 1.0.1, so how earlier versions handle information does not change) / 2026-11-30 Added section 2.5 describing the information handled and how it is processed in gesture sharing (sending and importing) (announced 2026-11-23; applies from app version 1.1.0; this feature is new in 1.1.0, so how earlier versions handle information does not change)
